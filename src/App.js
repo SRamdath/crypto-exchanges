@@ -12,8 +12,9 @@ import Container from "@material-ui/core/Container";
 import ExchangePage from "./Components/ExchangePage";
 
 function App() {
+    console.log(process.env.PUBLIC_URL);
   return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}> 
         <Grid container>
             <Container>
                 <Switch>
